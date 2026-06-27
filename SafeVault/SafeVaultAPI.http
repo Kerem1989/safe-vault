@@ -1,0 +1,21 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=JetBrains Rider
+
+###
+POST http://localhost:5287/User/Register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+    "password": "TestPassword123!",
+    "email": "test@mail.com"
+}
+
+###
+# @no-redirect
+GET http://localhost:5287/admin-only
+
+###
+# @no-redirect
+GET http://localhost:5287/user-claim.check
