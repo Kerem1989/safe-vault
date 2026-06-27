@@ -30,6 +30,10 @@ namespace SafeVault.Controllers ;
         [HttpPost]
         public async Task<IActionResult> Register(User model)
         {
+            if (!ValidationHelpers.IsValidEmail(model.Email))
+                ModelState.AddModelError("", "Invalid email address.");
+            if (!ValidationHelpers.IsValidUsername(model.Name))
+                ModelState.AddModelError("", "Invalid username.");
             var result = new IdentityResult();
             if (ModelState.IsValid)
             {
@@ -60,7 +64,7 @@ namespace SafeVault.Controllers ;
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if (!ValidationHelpers.ValidateInput(model.UserName, model.Password))
+            if (!ValidationHelpers.IsValidUsername(model.UserName))
             {
                 ModelState.AddModelError("", "Invalid username or password.");
                 return RedirectToAction("Error", "Home");
