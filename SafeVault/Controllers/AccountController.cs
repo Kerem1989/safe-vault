@@ -67,7 +67,7 @@ namespace SafeVault.Controllers ;
             if (!ValidationHelpers.IsValidUsername(model.UserName))
             {
                 ModelState.AddModelError("", "Invalid username or password.");
-                return RedirectToAction("Error", "Home");
+                return View();
             }
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace SafeVault.Controllers ;
                 if (user == null)
                 {
                     ModelState.AddModelError("", "Invalid login attempt.");
-                    return RedirectToAction("Error", "Home");
+                    return View();
                 }
                 
                 var roles = GetRoles(_userManager, user);
@@ -88,7 +88,7 @@ namespace SafeVault.Controllers ;
                         {
                             return RedirectToAction("Dashboard", "Home");
                         }
-                        return RedirectToAction("AccessDenied", "Account");
+                        return RedirectToAction("NoRole", "Home");
                     }
                     ModelState.AddModelError("", "Invalid login attempt.");
                 }

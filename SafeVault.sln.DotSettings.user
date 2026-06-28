@@ -7,5 +7,9 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ATestRunner_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2026_002E1_003Fresharper_002Dhost_003FSourcesCache_003F69dee5bb7870ec99b8eb53f6e532cac465d681f18c7837affdfb1ffec1aaf420_003FTestRunner_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/dotCover/Editor/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\kerem\AppData\Local\JetBrains\Rider2026.1\resharper-host\temp\Rider\vAny\CoverageData\_SafeVault.668203339\Snapshot\snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3423cd85_002D6c86_002D43ec_002D89cb_002Dea925ea9b5aa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsValidUsername_AcceptsCleanInput" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;ECD4BF8D-84C5-4B10-A646-A42A1C5D8046/f:TestInputValidation.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;ECD4BF8D-84C5-4B10-A646-A42A1C5D8046/f:TestInputValidation.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;ECD4BF8D-84C5-4B10-A646-A42A1C5D8046/f:TestAuthentication.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;ECD4BF8D-84C5-4B10-A646-A42A1C5D8046/f:TestAuthorization.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
